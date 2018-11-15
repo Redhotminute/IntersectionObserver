@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+	<!-- partial:partials/generic/_head.html -->
+	<!-- partial -->
+	<title>Example 2: How much is visible: horizontal scroll edition</title>
+</head>
+<body class="js-intersection-root --horizontal-layout"
+	data-intersection-viewport
+	data-intersection-options='{"threshold":[0, 0.25, 0.5, 0.75, 1]}'>
+	<div class="c-root-element">
+		<div>
+			Detect how much of the element is in the viewport.
+		</div>
+		<div class="js-feedback c-feedback u-hidden">Element is intersecting</div>
+	</div>
+	<div class="c-placeholder c-placeholder--horizontal"></div>
+	<div class="js-intersection-target c-target c-target--horizontal-layout c-target--4-parts"></div>
+	<div class="c-placeholder c-placeholder--horizontal"></div>
+	<script type="module" src="/js/main.js"></script>
+</body>
+</html>

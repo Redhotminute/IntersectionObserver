@@ -1,0 +1,53 @@
+$part-color: darkblue;
+
+.c-target {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	height: 50vh;
+	margin-left: 2.5em;
+	margin-right: 2.5em;
+	position: relative;
+	transition: background-color .5s ease-out;
+	z-index: 1;
+
+	&--subtle {
+		height: 70vh;
+		padding: 1em 2em;
+	}
+
+	&--4-parts {
+		background-color: transparent;
+		background-image: linear-gradient(rgba($part-color, .5) 0, rgba($part-color, .5) 25%, rgba($part-color,.4) 25%, rgba($part-color,.4) 50%, rgba($part-color,.3) 50%, rgba($part-color,.3) 75%, rgba($part-color,.2) 75%);
+	}
+
+	& + & {
+		margin-top: 2em;
+	}
+
+	&.is-active {
+		background-color: $part-color;
+	}
+
+	&--image-container {
+		align-items: center;
+		background-color: transparent;
+		box-shadow: 0 0 4em rgba(0, 0, 0, .3);
+		display: flex;
+		height: 80vh;
+		justify-content: center;
+
+		img {
+			height: 480px;
+		}
+	}
+
+	&--horizontal-layout {
+		height: 100vh;
+		flex-shrink: 0;
+		width: 50vw;
+
+		&.c-target--4-parts {
+			background-image: linear-gradient(to left, rgba($part-color, .5) 0, rgba($part-color, .5) 25%, rgba($part-color,.4) 25%, rgba($part-color,.4) 50%, rgba($part-color,.3) 50%, rgba($part-color,.3) 75%, rgba($part-color,.2) 75%);
+		}
+	}
+}

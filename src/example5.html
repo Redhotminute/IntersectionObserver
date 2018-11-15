@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+	<!-- partial:partials/generic/_head.html -->
+	<!-- partial -->
+	<title>Example 5: Lazy loading images</title>
+</head>
+<body class="js-intersection-root" data-intersection-viewport data-intersection-options='{"rootMargin":"200px 0px","threshold":[0]}'>
+	<div class="c-root-element">
+		<div class="js-feedback c-feedback"></div>
+	</div>
+
+	<article class="c-target c-target--image-container">
+		<img src="" data-src="https://frinkiac.com/img/S10E14/583248.jpg" alt="" data-index="1" class="js-intersection-target">
+	</article>
+
+	<article class="c-target c-target--image-container">
+		<img src="" data-src="https://frinkiac.com/img/S10E01/177343.jpg" alt="" data-index="2" class="js-intersection-target">
+	</article>
+
+	<article class="c-target c-target--image-container">
+		<img src="" data-src="https://frinkiac.com/img/S12E16/531531.jpg" alt="" data-index="3" class="js-intersection-target">
+	</article>
+
+	<article class="c-target c-target--image-container">
+		<img src="" data-src="https://frinkiac.com/img/S01E01/852124.jpg" alt="" data-index="4" class="js-intersection-target">
+	</article>
+	<script type="module" src="/js/lazyimages.js"></script>
+</body>
+</html>

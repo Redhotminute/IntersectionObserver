@@ -1,0 +1,5 @@
+.c-feedback {
+	&[data-ratio]:after {
+		content: "(" attr(data-ratio) "%)";
+	}
+}
